@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TF_IBilling_Regression2]">
+  <test thread-count="5" name="TC_LoginTest_001(failed)">
+    <parameter name="password" value="abc123"/>
+    <parameter name="username" value="demo@techfios.com"/>
+    <classes>
+      <class name="com.TF_ibilling.testCases.TC_TransactionTest_003">
+        <methods>
+          <include name="ValidUserShouldBeAbleToAccessAddCustomerMenu" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.TF_ibilling.testCases.TC_TransactionTest_003 -->
+    </classes>
+  </test> <!-- TC_LoginTest_001(failed) -->
+</suite> <!-- Failed suite [TF_IBilling_Regression2] -->

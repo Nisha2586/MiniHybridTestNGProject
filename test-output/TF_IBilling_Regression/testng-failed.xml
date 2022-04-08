@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TF_IBilling_Regression]">
+  <test thread-count="5" name="TF_ibilling Transaction Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.TF_ibilling.testCases.TC_TransactionTest_003">
+        <methods>
+          <include name="ValidUserShouldBeAbleToAccessAddCustomerMenu"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.TF_ibilling.testCases.TC_TransactionTest_003 -->
+    </classes>
+  </test> <!-- TF_ibilling Transaction Test(failed) -->
+</suite> <!-- Failed suite [TF_IBilling_Regression] -->

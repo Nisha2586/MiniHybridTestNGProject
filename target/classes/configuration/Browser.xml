@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TF_IBilling_Regression">
+
+	<!--<listeners>
+		<listener class-name="com.TF_ibilling.util.Reporting" />
+	</listeners>-->
+
+
+	<test name="TF_ibilling Transaction Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.TF_ibilling.testCases.TC_TransactionTest_003" />
+			<!--  <class name="com.TF_ibilling.testCases.DashboardTest" />-->
+			<!--<class name="com.TF_ibilling.testCases.TC_AddCustomerTest_003" />-->
+
+		</classes>
+
+	</test>
+
+</suite>
