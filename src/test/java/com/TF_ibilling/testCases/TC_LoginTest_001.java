@@ -14,17 +14,17 @@ import com.TF_ibilling.util.ExcelReader;
 
 public class TC_LoginTest_001 extends BasePage {
 	LoginPage loginPage;
-	
-	//@Parameters({"username","password"})
-	public void validUserShouldAbleToLogin(String us,String ps) {
+	@Test
+	@Parameters({"username","password"})
+	public void validUserShouldAbleToLogin(String username,String password) {
 		driver.get(baseUrl);
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
-		loginPage.insertUserName(us);
-		loginPage.insertPassword(ps);
+		loginPage.insertUserName(username);
+		loginPage.insertPassword(password);
 		loginPage.clickSininButton();
 	}
 	
-	@Test(dataProvider = "NegativeLoginData")
+	//@Test(dataProvider = "NegativeLoginData")
 		public void negativeLoginTest(String us,String ps) {
 		driver.get(baseUrl);
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
@@ -34,21 +34,21 @@ public class TC_LoginTest_001 extends BasePage {
 		
 	}
 	
-	@DataProvider(name="NegativeLoginData")
-	String[][] getData() throws IOException{
-		String path = "src\\main\\java\\com\\TF_ibillimg\\testDatas\\TF_Ibilling_NegativeLoginData.xlsx";
-		int rowcount=ExcelReader.getRowCount(path, "NegativeLoginData");
-		int colcount = ExcelReader.getCellCount(path, "NegativeLoginData", 1);
-		
-		String negLogindata[][] = new String[rowcount][colcount];
-		
-		for(int i=1;i<=rowcount;i++) {
-			for (int j=0;j<colcount;j++) {
-				negLogindata[i-1][j]=ExcelReader.getCellDataArray(path,"NegativeLoginData", i, j);
-				
-			}
-		}
-		return negLogindata;
-	}
+//	@DataProvider(name="NegativeLoginData")
+//	String[][] getData() throws IOException{
+//		String path = "src\\main\\java\\com\\TF_ibillimg\\testDatas\\TF_Ibilling_NegativeLoginData.xlsx";
+//		int rowcount=ExcelReader.getRowCount(path, "NegativeLoginData");
+//		int colcount = ExcelReader.getCellCount(path, "NegativeLoginData", 1);
+//		
+//		String negLogindata[][] = new String[rowcount][colcount];
+//		
+//		for(int i=1;i<=rowcount;i++) {
+//			for (int j=0;j<colcount;j++) {
+//				negLogindata[i-1][j]=ExcelReader.getCellDataArray(path,"NegativeLoginData", i, j);
+//				
+//			}
+//		}
+//		return negLogindata;
+//	}
 
 }

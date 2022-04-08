@@ -21,8 +21,8 @@ public class BasePage {
 	public  static WebDriver driver;
 	public static Logger logger;
 	public  String baseUrl = readconfig.getApplicationUrl();
-//	public  String username = readconfig.getApplicationsername();
-//	public  String password =readconfig.getApplicationPassword();
+	public  String username = readconfig.getApplicationsername();
+	public  String password =readconfig.getApplicationPassword();
 	public String br = readconfig.getBrowser();
 		
 	

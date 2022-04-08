@@ -28,14 +28,14 @@ public class ReadConfig {
 		String url = prop.getProperty("baseUrl");
 		return url;
 	}
-//	public String getApplicationsername() {
-//		String username = prop.getProperty("username");
-//		return username;
-//	}
-//	public String getApplicationPassword() {
-//		String password = prop.getProperty("password");
-//		return password;
-//	}
+	public String getApplicationsername() {
+		String username = prop.getProperty("username");
+		return username;
+	}
+	public String getApplicationPassword() {
+		String password = prop.getProperty("password");
+		return password;
+	}
 	public String getBrowser() {
 		String br = prop.getProperty("browser");
 		return br;

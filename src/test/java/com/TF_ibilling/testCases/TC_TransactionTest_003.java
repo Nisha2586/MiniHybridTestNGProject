@@ -22,9 +22,9 @@ public class TC_TransactionTest_003 extends BasePage {
 	TransactionPage transactionPage;
 
 	@Test//(dataProvider = "TransactionNewDepositData")
-	@Parameters({ "username", "password" })
+	//@Parameters({ "username", "password" })
 	
-	public void ValidUserShouldBeAbleToAccessAddCustomerMenu(String username,String password) {
+	public void ValidUserShouldBeAbleToAccessAddCustomerMenu() {
 		// driver=init();
 		driver.get(baseUrl);
 		

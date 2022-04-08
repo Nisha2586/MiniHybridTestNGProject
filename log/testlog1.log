@@ -17,3 +17,9 @@
 2022-04-08 13:41:42,896 [main] INFO TF_ibilling - Clicked New Deposit
 2022-04-08 13:43:02,278 [main] INFO TF_ibilling - Signed In
 2022-04-08 13:43:04,160 [main] INFO TF_ibilling - Clicked New Deposit
+2022-04-08 14:44:25,329 [main] INFO TF_ibilling - Signed In
+2022-04-08 14:44:27,046 [main] INFO TF_ibilling - Clicked New Deposit
+2022-04-08 14:44:27,523 [main] INFO TF_ibilling - Transaction successfull
+2022-04-08 14:47:00,066 [main] INFO TF_ibilling - Signed In
+2022-04-08 14:47:00,945 [main] INFO TF_ibilling - Clicked New Deposit
+2022-04-08 14:47:01,370 [main] INFO TF_ibilling - Transaction successfull
